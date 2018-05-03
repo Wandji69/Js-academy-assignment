@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Calculating The Factorial of a Number using Fuctions</title>
+    </head>
+    <body>
+        <h1>Calculating the Factorial of a Number Using Funtions</h1>
+        <script>
+           var userInput;
+           var num;
+           var i=1;
+           var fact;
+
+           function myFactor (num){
+               fact =num*i;
+               for (i;i<num; i++){
+                   fact=fact*i;
+               }
+               return fact
+           }
+
+           var result;
+           userInput = prompt("Please Enter the Value:","");
+           num = parseInt(userInput);
+           result = myFactor(num);
+           document.write(result);
+         </script>
+    </body>
+</html>
